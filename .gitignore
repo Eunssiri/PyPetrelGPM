@@ -5,3 +5,4 @@
 *.ipynb
 outputs/
 __pycache__/
+make_requirements.py
