@@ -1,4 +1,4 @@
-🪨 PyPetrelGPM
+### 🪨 PyPetrelGPM
 
 Python-based Geological Process Modeling Toolkit for PETREL GSLIB Data
 
@@ -33,6 +33,7 @@ The program supports:
 ---
 
 💡 Key Features
+
 1️⃣ Automatic GSLIB Import and Grid Conversion
 
 - Automatically recognizes PETREL GSLIB files and reconstructs them into 3D grid-based structures (x, y, z or i, j, k coordinates).
@@ -72,7 +73,9 @@ PyPetrelGPM consists of three core modules, each corresponding to a key stage in
 All scripts accept configuration files in YAML (.yml) format for parameter control.
 
 ▶️ 1. PETREL to Numpy Conversion
-python software/petrel_to_numpy.py params/params_petrel.yml
+
+
+$ python software/petrel_to_numpy.py params/params_petrel.yml
 
 
 - Loads PETREL-exported GSLIB files
@@ -82,7 +85,8 @@ python software/petrel_to_numpy.py params/params_petrel.yml
 - Visualizes lithofacies proportions (Sand, Silt, Clay)
 
 ▶️ 2. Preprocessing and Normalization
-python software/gpm_preprocessing.py params/params_preproc.yml
+
+$ python software/gpm_preprocessing.py params/params_preproc.yml
 
 
 - Performs missing-value detection, interpolation, and scaling
@@ -90,11 +94,9 @@ python software/gpm_preprocessing.py params/params_preproc.yml
 - Generates normalized data for machine learning or simulation input
 
 ▶️ 3. Visualization of Preprocessed Results
-# Cross-sectional visualization
-python software/gpm_viz.py sections params/params_viz_sections.yml  
 
-# 3D geometry visualization
-python software/gpm_viz.py geometry3d params/params_viz_geometry3d.yml
+$ python software/gpm_viz.py sections params/params_viz_sections.yml
+$ python software/gpm_viz.py geometry3d params/params_viz_geometry3d.yml
 
 ---
 🧑‍💻 Author

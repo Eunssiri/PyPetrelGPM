@@ -1,8 +1,0 @@
-*.hwp
-*.txt
-*.zip
-*.bash
-*.ipynb
-outputs/
-__pycache__/
-make_requirements.py
