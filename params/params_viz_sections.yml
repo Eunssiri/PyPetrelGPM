@@ -1,0 +1,14 @@
+# (sand, silt, clay) × (Z-mean XY, X-slice YZ, Y-slice XZ, Z-slice XY)
+# 3x4 패널 이미지를 저장합니다.
+# 실행:  python software/gpm_viz.py sections params/params_viz_sections.yml
+
+# (필수) 입력 .npz (원본 또는 전처리 이전/이후 어떤 것이든 가능)
+in_npz: outputs/out_petrel.npz
+
+# (필수) 출력 파일(PNG) 경로
+out_png: outputs/figure/sections_original.png
+
+# 슬라이스 인덱스 지정 (null 이면 각 축 중앙 인덱스를 자동 사용)
+x_slice: null   # X 고정(YZ 단면)용 x index (0 ~ nx-1)
+y_slice: null   # Y 고정(XZ 단면)용 y index (0 ~ ny-1)
+z_slice: null   # Z 고정(XY 단면)용 z index (0 ~ nz-1)
