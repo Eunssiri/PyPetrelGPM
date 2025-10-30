@@ -1,0 +1,25 @@
+# Petrel 파싱 결과(.npz)를 입력받아
+# 1) NaN 최소 윈도우 자동 크롭
+# 2) 보간(Z축 backward→forward, XY 슬라이스별 좌→우 ffill)
+# 3) 스케일링(minmax/standard)
+# 4) 단계별 시각화 PNG 저장 + 최종 NPY 저장
+# 실행:  python software/gpm_preprocessing.py params/params_preproc.yml
+
+# (필수) petrel_to_numpy.py의 출력 .npz 경로
+in_npz: outputs/out_petrel.npz
+
+# (필수) 보간+스케일 완료 결과 저장 파일(.npy)
+out_filled: outputs/filled.npy
+
+# 자동 크롭 윈도우 크기 (j: 높이, i: 너비)
+crop_h: 50      # j 방향(행) 크기
+crop_w: 36      # i 방향(열) 크기
+
+# 시각화에서 보여줄 슬라이스 인덱스 (유효 범위 내 정수)
+view_z: 10       # XY 패널에서 사용할 z index (0 ~ nz-1)
+view_y: 10       # XZ 패널에서 사용할 y index (0 ~ ny-1)
+
+# 스케일 방식: minmax | standard
+# - minmax   : (x - xmin) / (xmax - xmin)
+# - standard : (x - mean) / std
+scale_mode: minmax

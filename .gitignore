@@ -1,0 +1,7 @@
+*.hwp
+*.txt
+*.zip
+*.bash
+*.ipynb
+outputs/
+__pycache__/
