@@ -1,10 +1,10 @@
-### 🪨 PyPetrelGPM
+# 🪨 PyPetrelGPM
 
 Python-based Geological Process Modeling Toolkit for PETREL GSLIB Data
 
 ---
 
-📘 Overview
+## 📘 Overview
 
 PyPetrelGPM is a Python-based software designed for automated import, preprocessing, and visualization of geological models exported from PETREL in GSLIB format.
 It enables seamless conversion of structural and physical information from PETREL models into Python environments for further data analysis, generative AI training, and geological storage simulations.
@@ -21,7 +21,7 @@ The program supports:
 
 ---
 
-🔬 Application Fields
+## 🔬 Application Fields
 
 - Geological modeling
 
@@ -32,7 +32,7 @@ The program supports:
 - Geotechnical and subsurface resource studies
 ---
 
-💡 Key Features
+## 💡 Key Features
 
 1️⃣ Automatic GSLIB Import and Grid Conversion
 
@@ -56,7 +56,7 @@ The program supports:
 
 ---
 
-⚙️ Program Structure
+## ⚙️ Program Structure
 
 PyPetrelGPM consists of three core modules, each corresponding to a key stage in the data workflow:
 
@@ -68,14 +68,14 @@ PyPetrelGPM consists of three core modules, each corresponding to a key stage in
 
 ---
 
-🧩 Usage
+## 🧩 Usage
 
 All scripts accept configuration files in YAML (.yml) format for parameter control.
 
 ▶️ 1. PETREL to Numpy Conversion
 
 
-$ python software/petrel_to_numpy.py params/params_petrel.yml
+python software/petrel_to_numpy.py params/params_petrel.yml
 
 
 - Loads PETREL-exported GSLIB files
@@ -86,7 +86,7 @@ $ python software/petrel_to_numpy.py params/params_petrel.yml
 
 ▶️ 2. Preprocessing and Normalization
 
-$ python software/gpm_preprocessing.py params/params_preproc.yml
+python software/gpm_preprocessing.py params/params_preproc.yml
 
 
 - Performs missing-value detection, interpolation, and scaling
@@ -95,11 +95,12 @@ $ python software/gpm_preprocessing.py params/params_preproc.yml
 
 ▶️ 3. Visualization of Preprocessed Results
 
-$ python software/gpm_viz.py sections params/params_viz_sections.yml
-$ python software/gpm_viz.py geometry3d params/params_viz_geometry3d.yml
+python software/gpm_viz.py sections params/params_viz_sections.yml
+
+python software/gpm_viz.py geometry3d params/params_viz_geometry3d.yml
 
 ---
-🧑‍💻 Author
+## 🧑‍💻 Author
 
 Eun-sil Park
 M.S. Candidate, Energy Resources Engineering, Inha University
