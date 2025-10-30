@@ -74,9 +74,9 @@ All scripts accept configuration files in YAML (.yml) format for parameter contr
 
 ▶️ 1. PETREL to Numpy Conversion
 
-
-python software/petrel_to_numpy.py params/params_petrel.yml
-
+```bash
+$ python software/petrel_to_numpy.py params/params_petrel.yml
+```
 
 - Loads PETREL-exported GSLIB files
 
@@ -86,8 +86,9 @@ python software/petrel_to_numpy.py params/params_petrel.yml
 
 ▶️ 2. Preprocessing and Normalization
 
+```bash
 python software/gpm_preprocessing.py params/params_preproc.yml
-
+```
 
 - Performs missing-value detection, interpolation, and scaling
 
@@ -95,9 +96,13 @@ python software/gpm_preprocessing.py params/params_preproc.yml
 
 ▶️ 3. Visualization of Preprocessed Results
 
+```bash
 python software/gpm_viz.py sections params/params_viz_sections.yml
+```
 
+```bash
 python software/gpm_viz.py geometry3d params/params_viz_geometry3d.yml
+```
 
 ---
 ## 🧑‍💻 Author
