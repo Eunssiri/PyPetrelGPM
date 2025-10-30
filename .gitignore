@@ -1,6 +1,6 @@
-.hwp
-.txt
-.py
-.zip
-.bash
-.ipnyb
+*.hwp
+*.txt
+*.py
+*.zip
+*.bash
+*.ipynb
